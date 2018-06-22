@@ -1,7 +1,7 @@
-# oc3-option-equals-sign
+# Options - equals sign
 
 ## Description
-Opencart 3 modification (OCMOD) that adds equal sign for product option values (price, points and weight).
+OCMOD modification for Opencart 3 that adds equal sign for product option values (price, points and weight).
 
 Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions.
 
@@ -11,7 +11,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions.
 * Go to your OpenCart Admin Panel and open Extensions menu
 * Open Installer
 * Click the Upload button
-* Find, select and upload the _opions-equals-sign.ocmod.zip_
+* Find, select and upload the _options-equals-sign.ocmod.zip_
 * See the "Success: You have modified extensions!" message
 * Go to Extensions > Modifications > [Refresh] button
 * Go to Dashboard > [Developer Settings] button > [Refresh] button
@@ -19,13 +19,13 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions.
 ## Uninstall
 * Make backup
 * OpenCart Admin -> Extensions menu - Installer
-* Find _opions-equals-sign.ocmod.zip_ in Install History list and click [Uninstall] button
+* Find _options-equals-sign.ocmod.zip_ in Install History list and click [Uninstall] button
 * Go to Extensions > Modifications > [Refresh] button
 * Go to Dashboard > [Developer Settings] button > [Refresh] button
 
 ## Links
-* [opencart.com]()
-* [underr.space]()
+* [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=34383)
+* [underr.space](https://underr.space/notes/projects/project-005.html)
 
 ## Donation
 <a href='https://ko-fi.com/X8X290YA' target='_blank'><img src='https://image.ibb.co/hmWnnc/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com'/></a>
