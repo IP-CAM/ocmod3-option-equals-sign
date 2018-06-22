@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  * options-equals-sign v1.0 (https://github.com/underr-ua/oc3-options-equals-sign)
+  * Copyright 2018 Burkatskyi Andrii aka underr
+  * Licensed under MIT (https://github.com/underr-ua/oc3-options-equals-sign/blob/master/LICENSE)
+-->
+
+<modification>
+	<name>[underr] Options - equals sign</name>
+	<code>options-equals-sign</code>
+	<version>1.0</version>
+	<author>Andrii Burkatskyi aka underr</author>
+	<link>https://github.com/underr-ua/oc3-options-equals-sign/</link>
+
+    <file path="system/library/cart/cart.php" error="skip">
+        <operation error="skip">
+            <search><![CDATA[$option_price -= $option_value_query->row['price'];]]></search>
+            <add position="after"><![CDATA[									} elseif ($option_value_query->row['price_prefix'] == '=') {
+									$option_price += $option_value_query->row['price'] - $product_query->row['price'];]]></add>
+        </operation>
+
+        <operation error="skip">
+            <search><![CDATA[$option_points -= $option_value_query->row['points'];]]></search>
+            <add position="after"><![CDATA[									} elseif ($option_value_query->row['points_prefix'] == '=') {
+									$option_points = $option_value_query->row['points'];]]></add>
+        </operation>
+
+        <operation error="skip">
+            <search><![CDATA[$option_weight -= $option_value_query->row['weight'];]]></search>
+            <add position="after"><![CDATA[									} elseif ($option_value_query->row['weight_prefix'] == '=') {
+									$option_weight = $option_value_query->row['weight'];]]></add>
+        </operation>
+
+    </file>
+
+    <file path="admin/view/template/catalog/product_form.twig" error="skip">
+        <operation error="skip">
+          <search><![CDATA[{% if product_option_value.price_prefix == '+' %}]]></search>
+          <add position="before"><![CDATA[
+                                {% if product_option_value.price_prefix == '=' %}
+
+
+                                <option value="=" selected="selected">=</option>
+
+
+                                  {% else %}
+
+
+                                <option value="=">=</option>
+
+
+                                  {% endif %}]]>
+            </add>
+        </operation>
+
+        <operation error="skip">
+          <search><![CDATA[{% if product_option_value.points_prefix == '+' %}]]></search>
+          <add position="before"><![CDATA[
+                                  {% if product_option_value.points_prefix == '=' %}
+
+
+                                <option value="=" selected="selected">=</option>
+
+
+                                  {% else %}
+
+
+                                <option value="=">=</option>
+
+
+                                  {% endif %}]]>
+            </add>
+        </operation>
+
+        <operation error="skip">
+          <search><![CDATA[{% if product_option_value.weight_prefix == '+' %}]]></search>
+          <add position="before"><![CDATA[
+                                  {% if product_option_value.weight_prefix == '=' %}
+
+
+                                <option value="=" selected="selected">=</option>
+
+
+                                  {% else %}
+
+
+                                <option value="=">=</option>
+
+
+                                  {% endif %}]]>
+            </add>
+        </operation>
+
+        <operation error="skip">
+          <search><![CDATA[html += '    <option value="-">-</option>';]]></search>
+          <add position="after"><![CDATA[  html += '    <option value="=">=</option>';]]></add>
+        </operation>
+
+        <operation error="skip">
+          <search><![CDATA[$option_weight -= $product_option_value_info['weight'];]]></search>
+          <add position="after"><![CDATA[								} elseif ($product_option_value_info['weight_prefix'] == '=') {
+									$option_weight = $product_option_value_info['weight'];]]></add>
+        </operation>
+    </file>
+</modification>
