@@ -7,7 +7,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions.
 
 ## Install
 * To begin, make backup, really!
-* Download zip-file : [bin/opions-equals-sign.ocmod.zip](https://github.com/underr-ua/ocmod-options-equals-sign/raw/master/bin/options-equals-sign.ocmod.zip)
+* Download zip-file : [bin/opion-equals-sign.ocmod.zip](https://github.com/underr-ua/ocmod-options-equals-sign/raw/master/bin/options-equals-sign.ocmod.zip)
 * Open OpenCart Admin Panel
 * Extensions > Installer > [Upload]: open the file
 * See the "Success: You have modified extensions!" message
