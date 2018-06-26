@@ -1,4 +1,4 @@
-# Options - equals sign
+# Option Equals Sign
 
 ## Description
 OCMOD modification for Opencart 3 that adds equal sign for product option values (price, points and weight).
@@ -7,23 +7,23 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions.
 
 ## Install
 * To begin, make backup, really!
-* Download archive [bin/opions-equals-sign.ocmod.zip](https://github.com/underr-ua/oc3-options-equals-sign/raw/master/bin/options-equals-sign.ocmod.zip)
-* Go to your OpenCart Admin Panel and open Extensions menu
-* Open Installer
-* Click the Upload button
-* Find, select and upload the _options-equals-sign.ocmod.zip_
+* Download zip-file : [bin/opions-equals-sign.ocmod.zip](https://github.com/underr-ua/ocmod3-options-equals-sign/raw/master/bin/options-equals-sign.ocmod.zip)
+* Open OpenCart Admin Panel
+* Extensions > Installer > [Upload]: open the file
 * See the "Success: You have modified extensions!" message
-* Go to Extensions > Modifications > [Refresh] button
-* Go to Dashboard > [Developer Settings] button > [Refresh] button
+* Extensions > Modifications > [Refresh]
+* Go to Dashboard > [Developer Settings] > Theme [Refresh]
+* Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
 ## Uninstall
 * Make backup
-* OpenCart Admin -> Extensions menu - Installer
-* Find _options-equals-sign.ocmod.zip_ in Install History list and click [Uninstall] button
-* Go to Extensions > Modifications > [Refresh] button
-* Go to Dashboard > [Developer Settings] button > [Refresh] button
+* OpenCart Admin -> Extensions menu > Installer
+* Extensions > Install History: find opions-equals-sign.ocmod.zip and click [Uninstall]
+* Extensions > Modifications > [Refresh]
+* Go to Dashboard > [Developer Settings] > Theme [Refresh]
+* Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
-## Links
+## Additional links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=34383)
 * [underr.space](https://underr.space/notes/projects/project-005.html)
 
