@@ -1,9 +1,11 @@
 # Option Equals Sign
 
 ## Description
-Free OCMOD modification for Opencart 3 that adds equals sign for product option values (price, points and weight).
+Free OCMOD modification for Opencart 3 that adds equals sign value for product option (price, points and weight).
+Does not change options value for discounts and special prices.
 
 Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions.
+
 
 ## Install
 * To begin, make backup, really!
