@@ -97,10 +97,5 @@
           <add position="after"><![CDATA[  html += '    <option value="=">=</option>';]]></add>
         </operation>
 
-        <operation error="skip">
-          <search><![CDATA[$option_weight -= $product_option_value_info['weight'];]]></search>
-          <add position="after"><![CDATA[								} elseif ($product_option_value_info['weight_prefix'] == '=') {
-									$option_weight = $product_option_value_info['weight'];]]></add>
-        </operation>
     </file>
 </modification>
